@@ -69,35 +69,72 @@ With this version there are two 'commands' that grant you greater control over t
 
 , at the start of a Say input starts a new line with the AI's name tag. This means that even if it's already responded, you can get it to respond again, ir even add a trailing sentence to the beginning of its dialogue.
 
-Starting context
+; at the start of a Say input starts a new line with your name tag. This means that even if you've already responded, you can respond again and once again add a trailing sentence for the AI to finish off.
+
+(Starting context)
+You: Hey, wanna go for a walk?
+AI: Sure!
+
+(Example say input)
+,
+(How it ends up)
+You: Hey, wanna go for a walk?
+AI: Sure!
+AI:
+
+Exact same principles applies to starting a Say input with a semi-colon, but for yourself.
+
+(Starting context)
+You: Hey, wanna go for a walk?
+AI: Sure!
+
+(Example say input)
+;
+
+(How it'd look)
+You: Hey, wanna go for a walk?
+AI: Sure!
+You:
+
+If you have something in mind to start off the line, you can do something like
+
+(Starting context)
+You: Hey, wanna go for a walk?
+AI: Sure!
+
+(Example say input)
+,Wait, Shoot. Let me just go back and grab my keys. I'll
+
+(How it'd look)
+You: Hey, wanna go for a walk?
+AI: Sure!
+AI: Wait, shoot. Let me just go back and grab my keys. I'll
+
+Exact same principles applies to starting a Say input with a semi-colon, but for yourself.
+
+(Starting context)
 Bob: Hey, wanna go for a walk?
 Joe: Sure!
 
-Example input
-/say ,
+(Example say input)
+;
 
-How it ends up
+(How it'd look)
 Bob: Hey, wanna go for a walk?
 Joe: Sure!
-Joe:
+Bob:
 
-If you have something in mind for it to say, you can do something like
-
-Starting context
-
+(Starting context)
 Bob: Hey, wanna go for a walk?
 Joe: Sure!
 
-Input (Say)
+(Example say input)
+;How about we go to the
 
-,Shoot. Let me just go back and grab my keys. I'll
-
-How it'd look
+(How it'd look)
 Bob: Hey, wanna go for a walk?
 Joe: Sure!
-Joe: Shoot. Let me just go back and grab my keys. I'll
-
-
+Bob: How about we go to the
 
 
                               
