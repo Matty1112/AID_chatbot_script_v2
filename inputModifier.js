@@ -66,13 +66,13 @@ const modifier = (text) =>
       //If comma is detected at the start of say input, starts the next line with aiName: and confines output there.
       else if (rawInputText.startsWith(',')) 
       {
-        modifiedText = '\n' + state.aiName + ': ' + rawInputText.slice(1) //Slices the comma off as the first character of the string, leaving only the text that comes after.
+        modifiedText = '\n' + state.aiName + ':' + rawInputText.slice(1) //Slices the comma off as the first character of the string, leaving only the text that comes after.
         return {text: modifiedText}
       }
       //If semi-colon is detected at the start of say input, starts the next line with playerName: and confines output there.
       else if (rawInputText.startsWith(';')) 
       {
-        modifiedText = '\n' + state.playerName + ': ' + rawInputText.slice(1) 
+        modifiedText = '\n' + state.playerName + ':' + rawInputText.slice(1) 
         return {text: modifiedText}
       }
       
